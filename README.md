@@ -1,6 +1,6 @@
-# advent-reader
+# Advent Reader
 
-> A read app for readadvent.com
+> A reader app for [readadvent.com](readadvent.com).
 
 
 ## Install
