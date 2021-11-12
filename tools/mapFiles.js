@@ -3,7 +3,6 @@ import path from 'path';
 import { globby } from 'globby';
 import makeDir from 'make-dir';
 
-
 const mapFiles = async (
   src,
   srcType,
@@ -18,7 +17,7 @@ const mapFiles = async (
     paths.map(async (p) => {
       const file = await fs.readFile(p);
       const content = stringify ? file.toString() : file;
-      const out = cb(content);
+      const out = await Promise.resolve(cb(content));
 
       const filename = path.basename(p, `.${srcType}`);
       const outDir = path.dirname(p).replace(src, dest);
