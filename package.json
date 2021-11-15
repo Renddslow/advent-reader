@@ -9,8 +9,11 @@
 	"main": "dist/index.js",
 	"type": "module",
 	"scripts": {
+		"build:plan": "node tools/convertPlan.js",
 		"build:yves": "node tools/parseYves.js",
-		"build:html": "node tools/parseHTML.js"
+		"build:html": "node tools/parseHTML.js",
+		"build:clean": "node tools/cleanJSON.js",
+		"build:merge": "node tools/mergeFiles.js"
 	},
 	"husky": {
 		"hooks": {
