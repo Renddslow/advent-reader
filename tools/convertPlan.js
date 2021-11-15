@@ -43,9 +43,12 @@ const convertPlan = async (content) => {
     return {
       day: parseInt(day, 10),
       date,
-      morning: getRefs(morning),
-      evening: getRefs(evening),
-      psalms: getRefs(psalms),
+      morning,
+      evening,
+      psalms,
+      morningRange: getRefs(morning),
+      eveningRange: getRefs(evening),
+      psalmsRange: getRefs(psalms),
       morningTitle,
       eveningTitle,
     };

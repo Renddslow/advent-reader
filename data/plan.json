@@ -2,7 +2,10 @@
   {
     "day": 1,
     "date": "Nov 28",
-    "morning": [
+    "morning": "Genesis 1-11",
+    "evening": "Genesis 12-25",
+    "psalms": "Psalm 1-5",
+    "morningRange": [
       "GEN/1.json",
       "GEN/2.json",
       "GEN/3.json",
@@ -15,7 +18,7 @@
       "GEN/10.json",
       "GEN/11.json"
     ],
-    "evening": [
+    "eveningRange": [
       "GEN/12.json",
       "GEN/13.json",
       "GEN/14.json",
@@ -31,7 +34,7 @@
       "GEN/24.json",
       "GEN/25.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/1.json",
       "PSA/2.json",
       "PSA/3.json",
@@ -44,7 +47,10 @@
   {
     "day": 2,
     "date": "Nov 29",
-    "morning": [
+    "morning": "Genesis 26-36",
+    "evening": "Genesis 37-50",
+    "psalms": "Psalm 6-10",
+    "morningRange": [
       "GEN/26.json",
       "GEN/27.json",
       "GEN/28.json",
@@ -57,7 +63,7 @@
       "GEN/35.json",
       "GEN/36.json"
     ],
-    "evening": [
+    "eveningRange": [
       "GEN/37.json",
       "GEN/38.json",
       "GEN/39.json",
@@ -73,7 +79,7 @@
       "GEN/49.json",
       "GEN/50.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/6.json",
       "PSA/7.json",
       "PSA/8.json",
@@ -86,7 +92,10 @@
   {
     "day": 3,
     "date": "Nov 30",
-    "morning": [
+    "morning": "Exodus 1-11",
+    "evening": "Exodus 12-20",
+    "psalms": "Psalm 11-16",
+    "morningRange": [
       "EXO/1.json",
       "EXO/2.json",
       "EXO/3.json",
@@ -99,7 +108,7 @@
       "EXO/10.json",
       "EXO/11.json"
     ],
-    "evening": [
+    "eveningRange": [
       "EXO/12.json",
       "EXO/13.json",
       "EXO/14.json",
@@ -110,7 +119,7 @@
       "EXO/19.json",
       "EXO/20.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/11.json",
       "PSA/12.json",
       "PSA/13.json",
@@ -124,7 +133,10 @@
   {
     "day": 4,
     "date": "Dec 1",
-    "morning": [
+    "morning": "Exodus 21-30",
+    "evening": "Exodus 31-40",
+    "psalms": "Psalm 17-20",
+    "morningRange": [
       "EXO/21.json",
       "EXO/22.json",
       "EXO/23.json",
@@ -136,7 +148,7 @@
       "EXO/29.json",
       "EXO/30.json"
     ],
-    "evening": [
+    "eveningRange": [
       "EXO/31.json",
       "EXO/32.json",
       "EXO/33.json",
@@ -148,7 +160,7 @@
       "EXO/39.json",
       "EXO/40.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/17.json",
       "PSA/18.json",
       "PSA/19.json",
@@ -160,14 +172,17 @@
   {
     "day": 5,
     "date": "Dec 2",
-    "morning": [
+    "morning": "Leviticus 1-5",
+    "evening": "Leviticus 6-16",
+    "psalms": "Psalm 21-25",
+    "morningRange": [
       "LEV/1.json",
       "LEV/2.json",
       "LEV/3.json",
       "LEV/4.json",
       "LEV/5.json"
     ],
-    "evening": [
+    "eveningRange": [
       "LEV/6.json",
       "LEV/7.json",
       "LEV/8.json",
@@ -180,7 +195,7 @@
       "LEV/15.json",
       "LEV/16.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/21.json",
       "PSA/22.json",
       "PSA/23.json",
@@ -193,7 +208,10 @@
   {
     "day": 6,
     "date": "Dec 3",
-    "morning": [
+    "morning": "Numbers 21-25, Deuteronomy 1-6",
+    "evening": "Deuteronomy 7-16",
+    "psalms": "Psalm 26-30",
+    "morningRange": [
       "NUM/21.json",
       "NUM/22.json",
       "NUM/23.json",
@@ -206,7 +224,7 @@
       "DEU/5.json",
       "DEU/6.json"
     ],
-    "evening": [
+    "eveningRange": [
       "DEU/7.json",
       "DEU/8.json",
       "DEU/9.json",
@@ -218,7 +236,7 @@
       "DEU/15.json",
       "DEU/16.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/26.json",
       "PSA/27.json",
       "PSA/28.json",
@@ -231,7 +249,10 @@
   {
     "day": 7,
     "date": "Dec 4",
-    "morning": [
+    "morning": "Deuteronomy 17-26",
+    "evening": "Deuteronomy 27-34",
+    "psalms": "Psalm 31-40",
+    "morningRange": [
       "DEU/17.json",
       "DEU/18.json",
       "DEU/19.json",
@@ -243,7 +264,7 @@
       "DEU/25.json",
       "DEU/26.json"
     ],
-    "evening": [
+    "eveningRange": [
       "DEU/27.json",
       "DEU/28.json",
       "DEU/29.json",
@@ -253,7 +274,7 @@
       "DEU/33.json",
       "DEU/34.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/31.json",
       "PSA/32.json",
       "PSA/33.json",
@@ -271,7 +292,10 @@
   {
     "day": 8,
     "date": "Dec 5",
-    "morning": [
+    "morning": "Joshua 1-12",
+    "evening": "Joshua 23-24, Judges 1-5",
+    "psalms": "Psalm 41-45",
+    "morningRange": [
       "JOS/1.json",
       "JOS/2.json",
       "JOS/3.json",
@@ -285,7 +309,7 @@
       "JOS/11.json",
       "JOS/12.json"
     ],
-    "evening": [
+    "eveningRange": [
       "JOS/23.json",
       "JOS/24.json",
       "JDG/1.json",
@@ -294,7 +318,7 @@
       "JDG/4.json",
       "JDG/5.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/41.json",
       "PSA/42.json",
       "PSA/43.json",
@@ -307,7 +331,10 @@
   {
     "day": 9,
     "date": "Dec 6",
-    "morning": [
+    "morning": "Judges 6-12",
+    "evening": "Judges 13-21",
+    "psalms": "Psalm 46-55",
+    "morningRange": [
       "JDG/6.json",
       "JDG/7.json",
       "JDG/8.json",
@@ -316,7 +343,7 @@
       "JDG/11.json",
       "JDG/12.json"
     ],
-    "evening": [
+    "eveningRange": [
       "JDG/13.json",
       "JDG/14.json",
       "JDG/15.json",
@@ -327,7 +354,7 @@
       "JDG/20.json",
       "JDG/21.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/46.json",
       "PSA/47.json",
       "PSA/48.json",
@@ -345,7 +372,10 @@
   {
     "day": 10,
     "date": "Dec 7",
-    "morning": [
+    "morning": "Ruth, 1 Samuel 1-7",
+    "evening": "1 Samuel 8-17",
+    "psalms": "Psalm 56-60",
+    "morningRange": [
       "RUT/1.json",
       "RUT/2.json",
       "RUT/3.json",
@@ -358,7 +388,7 @@
       "1SA/6.json",
       "1SA/7.json"
     ],
-    "evening": [
+    "eveningRange": [
       "1SA/8.json",
       "1SA/9.json",
       "1SA/10.json",
@@ -370,7 +400,7 @@
       "1SA/16.json",
       "1SA/17.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/56.json",
       "PSA/57.json",
       "PSA/58.json",
@@ -383,7 +413,10 @@
   {
     "day": 11,
     "date": "Dec 8",
-    "morning": [
+    "morning": "1 Samuel 18-27",
+    "evening": "1 Samuel 28-31, 2 Samuel 1-6",
+    "psalms": "Psalm 61-65",
+    "morningRange": [
       "1SA/18.json",
       "1SA/19.json",
       "1SA/20.json",
@@ -395,7 +428,7 @@
       "1SA/26.json",
       "1SA/27.json"
     ],
-    "evening": [
+    "eveningRange": [
       "1SA/28.json",
       "1SA/29.json",
       "1SA/30.json",
@@ -407,7 +440,7 @@
       "2SA/5.json",
       "2SA/6.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/61.json",
       "PSA/62.json",
       "PSA/63.json",
@@ -420,7 +453,10 @@
   {
     "day": 12,
     "date": "Dec 9",
-    "morning": [
+    "morning": "2 Samuel 7-17",
+    "evening": "2 Samuel 18-24, 1 Kings 1-3",
+    "psalms": "Psalm 66-70",
+    "morningRange": [
       "2SA/7.json",
       "2SA/8.json",
       "2SA/9.json",
@@ -433,7 +469,7 @@
       "2SA/16.json",
       "2SA/17.json"
     ],
-    "evening": [
+    "eveningRange": [
       "2SA/18.json",
       "2SA/19.json",
       "2SA/20.json",
@@ -445,7 +481,7 @@
       "1KI/2.json",
       "1KI/3.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/66.json",
       "PSA/67.json",
       "PSA/68.json",
@@ -458,7 +494,10 @@
   {
     "day": 13,
     "date": "Dec 10",
-    "morning": [
+    "morning": "1 Kings 4-14",
+    "evening": "1 Kings 15-22",
+    "psalms": "Psalm 71-75",
+    "morningRange": [
       "1KI/4.json",
       "1KI/5.json",
       "1KI/6.json",
@@ -471,7 +510,7 @@
       "1KI/13.json",
       "1KI/14.json"
     ],
-    "evening": [
+    "eveningRange": [
       "1KI/15.json",
       "1KI/16.json",
       "1KI/17.json",
@@ -481,7 +520,7 @@
       "1KI/21.json",
       "1KI/22.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/71.json",
       "PSA/72.json",
       "PSA/73.json",
@@ -494,7 +533,10 @@
   {
     "day": 14,
     "date": "Dec 11",
-    "morning": [
+    "morning": "2 Kings 1-11",
+    "evening": "2 Kings 12-21",
+    "psalms": "Psalm 76-80",
+    "morningRange": [
       "2KI/1.json",
       "2KI/2.json",
       "2KI/3.json",
@@ -507,7 +549,7 @@
       "2KI/10.json",
       "2KI/11.json"
     ],
-    "evening": [
+    "eveningRange": [
       "2KI/12.json",
       "2KI/13.json",
       "2KI/14.json",
@@ -519,7 +561,7 @@
       "2KI/20.json",
       "2KI/21.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/76.json",
       "PSA/77.json",
       "PSA/78.json",
@@ -532,7 +574,10 @@
   {
     "day": 15,
     "date": "Dec 12",
-    "morning": [
+    "morning": "2 Kings 22-25, Isaiah 1-2, Isaiah 6, Isaiah 11",
+    "evening": "Isaiah 24-27, Isaiah 40-45",
+    "psalms": "Psalm 81-85",
+    "morningRange": [
       "2KI/22.json",
       "2KI/23.json",
       "2KI/24.json",
@@ -542,7 +587,7 @@
       "ISA/6.json",
       "ISA/11.json"
     ],
-    "evening": [
+    "eveningRange": [
       "ISA/24.json",
       "ISA/25.json",
       "ISA/26.json",
@@ -554,7 +599,7 @@
       "ISA/44.json",
       "ISA/45.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/81.json",
       "PSA/82.json",
       "PSA/83.json",
@@ -567,7 +612,10 @@
   {
     "day": 16,
     "date": "Dec 13",
-    "morning": [
+    "morning": "Isaiah 46-54",
+    "evening": "Isaiah 55-66",
+    "psalms": "Psalm 86-90",
+    "morningRange": [
       "ISA/46.json",
       "ISA/47.json",
       "ISA/48.json",
@@ -578,7 +626,7 @@
       "ISA/53.json",
       "ISA/54.json"
     ],
-    "evening": [
+    "eveningRange": [
       "ISA/55.json",
       "ISA/56.json",
       "ISA/57.json",
@@ -592,7 +640,7 @@
       "ISA/65.json",
       "ISA/66.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/86.json",
       "PSA/87.json",
       "PSA/88.json",
@@ -605,7 +653,10 @@
   {
     "day": 17,
     "date": "Dec 14",
-    "morning": [
+    "morning": "Ezekiel 16, Ezekiel 23, Ezekiel 34-39",
+    "evening": "Ezekiel 40-48, Daniel 7",
+    "psalms": "Psalm 91-95",
+    "morningRange": [
       "EZK/16.json",
       "EZK/23.json",
       "EZK/34.json",
@@ -615,7 +666,7 @@
       "EZK/38.json",
       "EZK/39.json"
     ],
-    "evening": [
+    "eveningRange": [
       "EZK/40.json",
       "EZK/41.json",
       "EZK/42.json",
@@ -627,7 +678,7 @@
       "EZK/48.json",
       "DAN/7.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/91.json",
       "PSA/92.json",
       "PSA/93.json",
@@ -640,7 +691,10 @@
   {
     "day": 18,
     "date": "Dec 15",
-    "morning": [
+    "morning": "Joel, Amos",
+    "evening": "Jonah, Micah",
+    "psalms": "Psalm 96-100",
+    "morningRange": [
       "JOL/1.json",
       "JOL/2.json",
       "JOL/3.json",
@@ -654,7 +708,7 @@
       "AMO/8.json",
       "AMO/9.json"
     ],
-    "evening": [
+    "eveningRange": [
       "JON/1.json",
       "JON/2.json",
       "JON/3.json",
@@ -667,7 +721,7 @@
       "MIC/6.json",
       "MIC/7.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/96.json",
       "PSA/97.json",
       "PSA/98.json",
@@ -680,7 +734,10 @@
   {
     "day": 19,
     "date": "Dec 16",
-    "morning": [
+    "morning": "Habbakuk, Zephaniah, Haggai",
+    "evening": "Zechariah, Proverbs 8",
+    "psalms": "Psalm 101-105",
+    "morningRange": [
       "HAB/1.json",
       "HAB/2.json",
       "HAB/3.json",
@@ -690,7 +747,7 @@
       "HAG/1.json",
       "HAG/2.json"
     ],
-    "evening": [
+    "eveningRange": [
       "ZEC/1.json",
       "ZEC/2.json",
       "ZEC/3.json",
@@ -707,7 +764,7 @@
       "ZEC/14.json",
       "PRO/8.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/101.json",
       "PSA/102.json",
       "PSA/103.json",
@@ -720,7 +777,10 @@
   {
     "day": 20,
     "date": "Dec 17",
-    "morning": [
+    "morning": "2 Chronicles 36, Mark 1-10",
+    "evening": "Mark 11-16, Matthew 1-4",
+    "psalms": "Psalm 106-110",
+    "morningRange": [
       "2CH/36.json",
       "MRK/1.json",
       "MRK/2.json",
@@ -733,7 +793,7 @@
       "MRK/9.json",
       "MRK/10.json"
     ],
-    "evening": [
+    "eveningRange": [
       "MRK/11.json",
       "MRK/12.json",
       "MRK/13.json",
@@ -745,7 +805,7 @@
       "MAT/3.json",
       "MAT/4.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/106.json",
       "PSA/107.json",
       "PSA/108.json",
@@ -758,7 +818,10 @@
   {
     "day": 21,
     "date": "Dec 18",
-    "morning": [
+    "morning": "Matthew 5-14",
+    "evening": "Matthew 15-25",
+    "psalms": "Psalm 111-118",
+    "morningRange": [
       "MAT/5.json",
       "MAT/6.json",
       "MAT/7.json",
@@ -770,7 +833,7 @@
       "MAT/13.json",
       "MAT/14.json"
     ],
-    "evening": [
+    "eveningRange": [
       "MAT/15.json",
       "MAT/16.json",
       "MAT/17.json",
@@ -783,7 +846,7 @@
       "MAT/24.json",
       "MAT/25.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/111.json",
       "PSA/112.json",
       "PSA/113.json",
@@ -799,12 +862,15 @@
   {
     "day": 22,
     "date": "Dec 19",
-    "morning": [
+    "morning": "Matthew 26-28",
+    "evening": "John 1-11",
+    "psalms": "Psalm 119",
+    "morningRange": [
       "MAT/26.json",
       "MAT/27.json",
       "MAT/28.json"
     ],
-    "evening": [
+    "eveningRange": [
       "JHN/1.json",
       "JHN/2.json",
       "JHN/3.json",
@@ -817,7 +883,7 @@
       "JHN/10.json",
       "JHN/11.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/119.json"
     ],
     "morningTitle": "The Suffering Servant",
@@ -826,7 +892,10 @@
   {
     "day": 23,
     "date": "Dec 20",
-    "morning": [
+    "morning": "John 12-21",
+    "evening": "Acts 1-7",
+    "psalms": "Psalm 126-130",
+    "morningRange": [
       "JHN/12.json",
       "JHN/13.json",
       "JHN/14.json",
@@ -838,7 +907,7 @@
       "JHN/20.json",
       "JHN/21.json"
     ],
-    "evening": [
+    "eveningRange": [
       "ACT/1.json",
       "ACT/2.json",
       "ACT/3.json",
@@ -847,7 +916,7 @@
       "ACT/6.json",
       "ACT/7.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/126.json",
       "PSA/127.json",
       "PSA/128.json",
@@ -860,7 +929,10 @@
   {
     "day": 24,
     "date": "Dec 21",
-    "morning": [
+    "morning": "Romans 1-11",
+    "evening": "Romans 12-16",
+    "psalms": "Psalm 131-135",
+    "morningRange": [
       "ROM/1.json",
       "ROM/2.json",
       "ROM/3.json",
@@ -873,14 +945,14 @@
       "ROM/10.json",
       "ROM/11.json"
     ],
-    "evening": [
+    "eveningRange": [
       "ROM/12.json",
       "ROM/13.json",
       "ROM/14.json",
       "ROM/15.json",
       "ROM/16.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/131.json",
       "PSA/132.json",
       "PSA/133.json",
@@ -893,7 +965,10 @@
   {
     "day": 25,
     "date": "Dec 22",
-    "morning": [
+    "morning": "1 Corinthians 12-16, 1 Thessalonians",
+    "evening": "2 Thessalonians, Philippians, Colossians",
+    "psalms": "Psalm 136-140",
+    "morningRange": [
       "1CO/12.json",
       "1CO/13.json",
       "1CO/14.json",
@@ -905,7 +980,7 @@
       "1TH/4.json",
       "1TH/5.json"
     ],
-    "evening": [
+    "eveningRange": [
       "2TH/1.json",
       "2TH/2.json",
       "2TH/3.json",
@@ -918,7 +993,7 @@
       "COL/3.json",
       "COL/4.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/136.json",
       "PSA/137.json",
       "PSA/138.json",
@@ -931,7 +1006,10 @@
   {
     "day": 26,
     "date": "Dec 23",
-    "morning": [
+    "morning": "Hebrews",
+    "evening": "James, Jude",
+    "psalms": "Psalm 141-145",
+    "morningRange": [
       "HEB/1.json",
       "HEB/2.json",
       "HEB/3.json",
@@ -946,7 +1024,7 @@
       "HEB/12.json",
       "HEB/13.json"
     ],
-    "evening": [
+    "eveningRange": [
       "JAS/1.json",
       "JAS/2.json",
       "JAS/3.json",
@@ -954,7 +1032,7 @@
       "JAS/5.json",
       "JUD/1.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/141.json",
       "PSA/142.json",
       "PSA/143.json",
@@ -967,7 +1045,10 @@
   {
     "day": 27,
     "date": "Dec 24",
-    "morning": [
+    "morning": "Revelation 1-11",
+    "evening": "Revelation 12-22",
+    "psalms": "Psalm 146-150",
+    "morningRange": [
       "REV/1.json",
       "REV/2.json",
       "REV/3.json",
@@ -980,7 +1061,7 @@
       "REV/10.json",
       "REV/11.json"
     ],
-    "evening": [
+    "eveningRange": [
       "REV/12.json",
       "REV/13.json",
       "REV/14.json",
@@ -993,7 +1074,7 @@
       "REV/21.json",
       "REV/22.json"
     ],
-    "psalms": [
+    "psalmsRange": [
       "PSA/146.json",
       "PSA/147.json",
       "PSA/148.json",
