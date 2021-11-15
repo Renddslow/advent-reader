@@ -37,7 +37,9 @@
       "PSA/3.json",
       "PSA/4.json",
       "PSA/5.json"
-    ]
+    ],
+    "morningTitle": "Of Men and Beasts",
+    "eveningTitle": "Father Abraham..."
   },
   {
     "day": 2,
@@ -77,7 +79,9 @@
       "PSA/8.json",
       "PSA/9.json",
       "PSA/10.json"
-    ]
+    ],
+    "morningTitle": "...Had Many Sons",
+    "eveningTitle": "The Seed of the Woman"
   },
   {
     "day": 3,
@@ -113,7 +117,9 @@
       "PSA/14.json",
       "PSA/15.json",
       "PSA/16.json"
-    ]
+    ],
+    "morningTitle": "Heard Their Cries",
+    "eveningTitle": "Outstretched Arm"
   },
   {
     "day": 4,
@@ -147,7 +153,9 @@
       "PSA/18.json",
       "PSA/19.json",
       "PSA/20.json"
-    ]
+    ],
+    "morningTitle": "I Am YHWH Your God",
+    "eveningTitle": "God with Us"
   },
   {
     "day": 5,
@@ -178,7 +186,9 @@
       "PSA/23.json",
       "PSA/24.json",
       "PSA/25.json"
-    ]
+    ],
+    "morningTitle": "Priests of YHWH",
+    "eveningTitle": "Of Priests and Atonement"
   },
   {
     "day": 6,
@@ -214,7 +224,9 @@
       "PSA/28.json",
       "PSA/29.json",
       "PSA/30.json"
-    ]
+    ],
+    "morningTitle": "The Faithfulness of YHWH",
+    "eveningTitle": "A Familiar Story"
   },
   {
     "day": 7,
@@ -252,7 +264,9 @@
       "PSA/38.json",
       "PSA/39.json",
       "PSA/40.json"
-    ]
+    ],
+    "morningTitle": "The Instructions of YHWH",
+    "eveningTitle": "A Blessing and a Curse"
   },
   {
     "day": 8,
@@ -286,7 +300,9 @@
       "PSA/43.json",
       "PSA/44.json",
       "PSA/45.json"
-    ]
+    ],
+    "morningTitle": "War in Canaan",
+    "eveningTitle": "Me and My House"
   },
   {
     "day": 9,
@@ -322,7 +338,9 @@
       "PSA/53.json",
       "PSA/54.json",
       "PSA/55.json"
-    ]
+    ],
+    "morningTitle": "Deliverers",
+    "eveningTitle": "Israel: Civil War"
   },
   {
     "day": 10,
@@ -358,7 +376,9 @@
       "PSA/58.json",
       "PSA/59.json",
       "PSA/60.json"
-    ]
+    ],
+    "morningTitle": "Of Faithful Servants",
+    "eveningTitle": "A King Like the Nations"
   },
   {
     "day": 11,
@@ -393,7 +413,9 @@
       "PSA/63.json",
       "PSA/64.json",
       "PSA/65.json"
-    ]
+    ],
+    "morningTitle": "A Man after God's Own Heart",
+    "eveningTitle": "How the Mighty have Fallen"
   },
   {
     "day": 12,
@@ -429,7 +451,9 @@
       "PSA/68.json",
       "PSA/69.json",
       "PSA/70.json"
-    ]
+    ],
+    "morningTitle": "A Tale of Two Houses",
+    "eveningTitle": "The Death of a King"
   },
   {
     "day": 13,
@@ -463,7 +487,9 @@
       "PSA/73.json",
       "PSA/74.json",
       "PSA/75.json"
-    ]
+    ],
+    "morningTitle": "Of Gold and Chariots",
+    "eveningTitle": "Israel: Civil War II"
   },
   {
     "day": 14,
@@ -499,7 +525,9 @@
       "PSA/78.json",
       "PSA/79.json",
       "PSA/80.json"
-    ]
+    ],
+    "morningTitle": "The Man of God",
+    "eveningTitle": "In the Eyes of YHWH"
   },
   {
     "day": 15,
@@ -532,7 +560,9 @@
       "PSA/83.json",
       "PSA/84.json",
       "PSA/85.json"
-    ]
+    ],
+    "morningTitle": "Exile",
+    "eveningTitle": "Comfort, Comfort My People"
   },
   {
     "day": 16,
@@ -568,7 +598,9 @@
       "PSA/88.json",
       "PSA/89.json",
       "PSA/90.json"
-    ]
+    ],
+    "morningTitle": "Comfort, Comfort My People",
+    "eveningTitle": "The Servant"
   },
   {
     "day": 17,
@@ -601,7 +633,9 @@
       "PSA/93.json",
       "PSA/94.json",
       "PSA/95.json"
-    ]
+    ],
+    "morningTitle": "Israel the Unfaithful",
+    "eveningTitle": "One Like the Son of Man"
   },
   {
     "day": 18,
@@ -639,7 +673,9 @@
       "PSA/98.json",
       "PSA/99.json",
       "PSA/100.json"
-    ]
+    ],
+    "morningTitle": "The Years the Locusts Devoured",
+    "eveningTitle": "Melt Like Wax"
   },
   {
     "day": 19,
@@ -677,7 +713,9 @@
       "PSA/103.json",
       "PSA/104.json",
       "PSA/105.json"
-    ]
+    ],
+    "morningTitle": "",
+    "eveningTitle": "Lady Wisdom"
   },
   {
     "day": 20,
@@ -713,7 +751,9 @@
       "PSA/108.json",
       "PSA/109.json",
       "PSA/110.json"
-    ]
+    ],
+    "morningTitle": "Let Him Go Up",
+    "eveningTitle": "If You Are the Son of God"
   },
   {
     "day": 21,
@@ -752,7 +792,9 @@
       "PSA/116.json",
       "PSA/117.json",
       "PSA/118.json"
-    ]
+    ],
+    "morningTitle": "The Instructions of Jesus",
+    "eveningTitle": "Jesus in Judea"
   },
   {
     "day": 22,
@@ -777,7 +819,9 @@
     ],
     "psalms": [
       "PSA/119.json"
-    ]
+    ],
+    "morningTitle": "The Suffering Servant",
+    "eveningTitle": "The Word"
   },
   {
     "day": 23,
@@ -809,7 +853,9 @@
       "PSA/128.json",
       "PSA/129.json",
       "PSA/130.json"
-    ]
+    ],
+    "morningTitle": "Do You Love Me?",
+    "eveningTitle": "The Blood of the Martyrs"
   },
   {
     "day": 24,
@@ -840,7 +886,9 @@
       "PSA/133.json",
       "PSA/134.json",
       "PSA/135.json"
-    ]
+    ],
+    "morningTitle": "",
+    "eveningTitle": ""
   },
   {
     "day": 25,
@@ -876,7 +924,9 @@
       "PSA/138.json",
       "PSA/139.json",
       "PSA/140.json"
-    ]
+    ],
+    "morningTitle": "The Resurrection of the Body",
+    "eveningTitle": "The Image of the Invisible God"
   },
   {
     "day": 26,
@@ -910,7 +960,9 @@
       "PSA/143.json",
       "PSA/144.json",
       "PSA/145.json"
-    ]
+    ],
+    "morningTitle": "A Great High Priest",
+    "eveningTitle": "Faith and Works"
   },
   {
     "day": 27,
@@ -947,6 +999,8 @@
       "PSA/148.json",
       "PSA/149.json",
       "PSA/150.json"
-    ]
+    ],
+    "morningTitle": "",
+    "eveningTitle": "The Advent"
   }
 ]

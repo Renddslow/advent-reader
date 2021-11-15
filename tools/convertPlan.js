@@ -39,13 +39,15 @@ const convertRefToRange = (ref) => {
 const convertPlan = async (content) => {
   const results = Papa.parse(content.trim());
   const obj = results.data.map((item) => {
-    const [day, date, morning, evening, psalms] = item;
+    const [day, date, morning, evening, psalms, morningTitle, eveningTitle] = item;
     return {
       day: parseInt(day, 10),
       date,
       morning: getRefs(morning),
       evening: getRefs(evening),
       psalms: getRefs(psalms),
+      morningTitle,
+      eveningTitle,
     };
   });
 
