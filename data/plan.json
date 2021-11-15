@@ -1,0 +1,952 @@
+[
+  {
+    "day": 1,
+    "date": "Nov 28",
+    "morning": [
+      "GEN/1.json",
+      "GEN/2.json",
+      "GEN/3.json",
+      "GEN/4.json",
+      "GEN/5.json",
+      "GEN/6.json",
+      "GEN/7.json",
+      "GEN/8.json",
+      "GEN/9.json",
+      "GEN/10.json",
+      "GEN/11.json"
+    ],
+    "evening": [
+      "GEN/12.json",
+      "GEN/13.json",
+      "GEN/14.json",
+      "GEN/15.json",
+      "GEN/16.json",
+      "GEN/17.json",
+      "GEN/18.json",
+      "GEN/19.json",
+      "GEN/20.json",
+      "GEN/21.json",
+      "GEN/22.json",
+      "GEN/23.json",
+      "GEN/24.json",
+      "GEN/25.json"
+    ],
+    "psalms": [
+      "PSA/1.json",
+      "PSA/2.json",
+      "PSA/3.json",
+      "PSA/4.json",
+      "PSA/5.json"
+    ]
+  },
+  {
+    "day": 2,
+    "date": "Nov 29",
+    "morning": [
+      "GEN/26.json",
+      "GEN/27.json",
+      "GEN/28.json",
+      "GEN/29.json",
+      "GEN/30.json",
+      "GEN/31.json",
+      "GEN/32.json",
+      "GEN/33.json",
+      "GEN/34.json",
+      "GEN/35.json",
+      "GEN/36.json"
+    ],
+    "evening": [
+      "GEN/37.json",
+      "GEN/38.json",
+      "GEN/39.json",
+      "GEN/40.json",
+      "GEN/41.json",
+      "GEN/42.json",
+      "GEN/43.json",
+      "GEN/44.json",
+      "GEN/45.json",
+      "GEN/46.json",
+      "GEN/47.json",
+      "GEN/48.json",
+      "GEN/49.json",
+      "GEN/50.json"
+    ],
+    "psalms": [
+      "PSA/6.json",
+      "PSA/7.json",
+      "PSA/8.json",
+      "PSA/9.json",
+      "PSA/10.json"
+    ]
+  },
+  {
+    "day": 3,
+    "date": "Nov 30",
+    "morning": [
+      "EXO/1.json",
+      "EXO/2.json",
+      "EXO/3.json",
+      "EXO/4.json",
+      "EXO/5.json",
+      "EXO/6.json",
+      "EXO/7.json",
+      "EXO/8.json",
+      "EXO/9.json",
+      "EXO/10.json",
+      "EXO/11.json"
+    ],
+    "evening": [
+      "EXO/12.json",
+      "EXO/13.json",
+      "EXO/14.json",
+      "EXO/15.json",
+      "EXO/16.json",
+      "EXO/17.json",
+      "EXO/18.json",
+      "EXO/19.json",
+      "EXO/20.json"
+    ],
+    "psalms": [
+      "PSA/11.json",
+      "PSA/12.json",
+      "PSA/13.json",
+      "PSA/14.json",
+      "PSA/15.json",
+      "PSA/16.json"
+    ]
+  },
+  {
+    "day": 4,
+    "date": "Dec 1",
+    "morning": [
+      "EXO/21.json",
+      "EXO/22.json",
+      "EXO/23.json",
+      "EXO/24.json",
+      "EXO/25.json",
+      "EXO/26.json",
+      "EXO/27.json",
+      "EXO/28.json",
+      "EXO/29.json",
+      "EXO/30.json"
+    ],
+    "evening": [
+      "EXO/31.json",
+      "EXO/32.json",
+      "EXO/33.json",
+      "EXO/34.json",
+      "EXO/35.json",
+      "EXO/36.json",
+      "EXO/37.json",
+      "EXO/38.json",
+      "EXO/39.json",
+      "EXO/40.json"
+    ],
+    "psalms": [
+      "PSA/17.json",
+      "PSA/18.json",
+      "PSA/19.json",
+      "PSA/20.json"
+    ]
+  },
+  {
+    "day": 5,
+    "date": "Dec 2",
+    "morning": [
+      "LEV/1.json",
+      "LEV/2.json",
+      "LEV/3.json",
+      "LEV/4.json",
+      "LEV/5.json"
+    ],
+    "evening": [
+      "LEV/6.json",
+      "LEV/7.json",
+      "LEV/8.json",
+      "LEV/9.json",
+      "LEV/10.json",
+      "LEV/11.json",
+      "LEV/12.json",
+      "LEV/13.json",
+      "LEV/14.json",
+      "LEV/15.json",
+      "LEV/16.json"
+    ],
+    "psalms": [
+      "PSA/21.json",
+      "PSA/22.json",
+      "PSA/23.json",
+      "PSA/24.json",
+      "PSA/25.json"
+    ]
+  },
+  {
+    "day": 6,
+    "date": "Dec 3",
+    "morning": [
+      "NUM/21.json",
+      "NUM/22.json",
+      "NUM/23.json",
+      "NUM/24.json",
+      "NUM/25.json",
+      "DEU/1.json",
+      "DEU/2.json",
+      "DEU/3.json",
+      "DEU/4.json",
+      "DEU/5.json",
+      "DEU/6.json"
+    ],
+    "evening": [
+      "DEU/7.json",
+      "DEU/8.json",
+      "DEU/9.json",
+      "DEU/10.json",
+      "DEU/11.json",
+      "DEU/12.json",
+      "DEU/13.json",
+      "DEU/14.json",
+      "DEU/15.json",
+      "DEU/16.json"
+    ],
+    "psalms": [
+      "PSA/26.json",
+      "PSA/27.json",
+      "PSA/28.json",
+      "PSA/29.json",
+      "PSA/30.json"
+    ]
+  },
+  {
+    "day": 7,
+    "date": "Dec 4",
+    "morning": [
+      "DEU/17.json",
+      "DEU/18.json",
+      "DEU/19.json",
+      "DEU/20.json",
+      "DEU/21.json",
+      "DEU/22.json",
+      "DEU/23.json",
+      "DEU/24.json",
+      "DEU/25.json",
+      "DEU/26.json"
+    ],
+    "evening": [
+      "DEU/27.json",
+      "DEU/28.json",
+      "DEU/29.json",
+      "DEU/30.json",
+      "DEU/31.json",
+      "DEU/32.json",
+      "DEU/33.json",
+      "DEU/34.json"
+    ],
+    "psalms": [
+      "PSA/31.json",
+      "PSA/32.json",
+      "PSA/33.json",
+      "PSA/34.json",
+      "PSA/35.json",
+      "PSA/36.json",
+      "PSA/37.json",
+      "PSA/38.json",
+      "PSA/39.json",
+      "PSA/40.json"
+    ]
+  },
+  {
+    "day": 8,
+    "date": "Dec 5",
+    "morning": [
+      "JOS/1.json",
+      "JOS/2.json",
+      "JOS/3.json",
+      "JOS/4.json",
+      "JOS/5.json",
+      "JOS/6.json",
+      "JOS/7.json",
+      "JOS/8.json",
+      "JOS/9.json",
+      "JOS/10.json",
+      "JOS/11.json",
+      "JOS/12.json"
+    ],
+    "evening": [
+      "JOS/23.json",
+      "JOS/24.json",
+      "JDG/1.json",
+      "JDG/2.json",
+      "JDG/3.json",
+      "JDG/4.json",
+      "JDG/5.json"
+    ],
+    "psalms": [
+      "PSA/41.json",
+      "PSA/42.json",
+      "PSA/43.json",
+      "PSA/44.json",
+      "PSA/45.json"
+    ]
+  },
+  {
+    "day": 9,
+    "date": "Dec 6",
+    "morning": [
+      "JDG/6.json",
+      "JDG/7.json",
+      "JDG/8.json",
+      "JDG/9.json",
+      "JDG/10.json",
+      "JDG/11.json",
+      "JDG/12.json"
+    ],
+    "evening": [
+      "JDG/13.json",
+      "JDG/14.json",
+      "JDG/15.json",
+      "JDG/16.json",
+      "JDG/17.json",
+      "JDG/18.json",
+      "JDG/19.json",
+      "JDG/20.json",
+      "JDG/21.json"
+    ],
+    "psalms": [
+      "PSA/46.json",
+      "PSA/47.json",
+      "PSA/48.json",
+      "PSA/49.json",
+      "PSA/50.json",
+      "PSA/51.json",
+      "PSA/52.json",
+      "PSA/53.json",
+      "PSA/54.json",
+      "PSA/55.json"
+    ]
+  },
+  {
+    "day": 10,
+    "date": "Dec 7",
+    "morning": [
+      "RUT/1.json",
+      "RUT/2.json",
+      "RUT/3.json",
+      "RUT/4.json",
+      "1SA/1.json",
+      "1SA/2.json",
+      "1SA/3.json",
+      "1SA/4.json",
+      "1SA/5.json",
+      "1SA/6.json",
+      "1SA/7.json"
+    ],
+    "evening": [
+      "1SA/8.json",
+      "1SA/9.json",
+      "1SA/10.json",
+      "1SA/11.json",
+      "1SA/12.json",
+      "1SA/13.json",
+      "1SA/14.json",
+      "1SA/15.json",
+      "1SA/16.json",
+      "1SA/17.json"
+    ],
+    "psalms": [
+      "PSA/56.json",
+      "PSA/57.json",
+      "PSA/58.json",
+      "PSA/59.json",
+      "PSA/60.json"
+    ]
+  },
+  {
+    "day": 11,
+    "date": "Dec 8",
+    "morning": [
+      "1SA/18.json",
+      "1SA/19.json",
+      "1SA/20.json",
+      "1SA/21.json",
+      "1SA/22.json",
+      "1SA/23.json",
+      "1SA/24.json",
+      "1SA/25.json",
+      "1SA/26.json",
+      "1SA/27.json"
+    ],
+    "evening": [
+      "1SA/28.json",
+      "1SA/29.json",
+      "1SA/30.json",
+      "1SA/31.json",
+      "2SA/1.json",
+      "2SA/2.json",
+      "2SA/3.json",
+      "2SA/4.json",
+      "2SA/5.json",
+      "2SA/6.json"
+    ],
+    "psalms": [
+      "PSA/61.json",
+      "PSA/62.json",
+      "PSA/63.json",
+      "PSA/64.json",
+      "PSA/65.json"
+    ]
+  },
+  {
+    "day": 12,
+    "date": "Dec 9",
+    "morning": [
+      "2SA/7.json",
+      "2SA/8.json",
+      "2SA/9.json",
+      "2SA/10.json",
+      "2SA/11.json",
+      "2SA/12.json",
+      "2SA/13.json",
+      "2SA/14.json",
+      "2SA/15.json",
+      "2SA/16.json",
+      "2SA/17.json"
+    ],
+    "evening": [
+      "2SA/18.json",
+      "2SA/19.json",
+      "2SA/20.json",
+      "2SA/21.json",
+      "2SA/22.json",
+      "2SA/23.json",
+      "2SA/24.json",
+      "1KI/1.json",
+      "1KI/2.json",
+      "1KI/3.json"
+    ],
+    "psalms": [
+      "PSA/66.json",
+      "PSA/67.json",
+      "PSA/68.json",
+      "PSA/69.json",
+      "PSA/70.json"
+    ]
+  },
+  {
+    "day": 13,
+    "date": "Dec 10",
+    "morning": [
+      "1KI/4.json",
+      "1KI/5.json",
+      "1KI/6.json",
+      "1KI/7.json",
+      "1KI/8.json",
+      "1KI/9.json",
+      "1KI/10.json",
+      "1KI/11.json",
+      "1KI/12.json",
+      "1KI/13.json",
+      "1KI/14.json"
+    ],
+    "evening": [
+      "1KI/15.json",
+      "1KI/16.json",
+      "1KI/17.json",
+      "1KI/18.json",
+      "1KI/19.json",
+      "1KI/20.json",
+      "1KI/21.json",
+      "1KI/22.json"
+    ],
+    "psalms": [
+      "PSA/71.json",
+      "PSA/72.json",
+      "PSA/73.json",
+      "PSA/74.json",
+      "PSA/75.json"
+    ]
+  },
+  {
+    "day": 14,
+    "date": "Dec 11",
+    "morning": [
+      "2KI/1.json",
+      "2KI/2.json",
+      "2KI/3.json",
+      "2KI/4.json",
+      "2KI/5.json",
+      "2KI/6.json",
+      "2KI/7.json",
+      "2KI/8.json",
+      "2KI/9.json",
+      "2KI/10.json",
+      "2KI/11.json"
+    ],
+    "evening": [
+      "2KI/12.json",
+      "2KI/13.json",
+      "2KI/14.json",
+      "2KI/15.json",
+      "2KI/16.json",
+      "2KI/17.json",
+      "2KI/18.json",
+      "2KI/19.json",
+      "2KI/20.json",
+      "2KI/21.json"
+    ],
+    "psalms": [
+      "PSA/76.json",
+      "PSA/77.json",
+      "PSA/78.json",
+      "PSA/79.json",
+      "PSA/80.json"
+    ]
+  },
+  {
+    "day": 15,
+    "date": "Dec 12",
+    "morning": [
+      "2KI/22.json",
+      "2KI/23.json",
+      "2KI/24.json",
+      "2KI/25.json",
+      "ISA/1.json",
+      "ISA/2.json",
+      "ISA/6.json",
+      "ISA/11.json"
+    ],
+    "evening": [
+      "ISA/24.json",
+      "ISA/25.json",
+      "ISA/26.json",
+      "ISA/27.json",
+      "ISA/40.json",
+      "ISA/41.json",
+      "ISA/42.json",
+      "ISA/43.json",
+      "ISA/44.json",
+      "ISA/45.json"
+    ],
+    "psalms": [
+      "PSA/81.json",
+      "PSA/82.json",
+      "PSA/83.json",
+      "PSA/84.json",
+      "PSA/85.json"
+    ]
+  },
+  {
+    "day": 16,
+    "date": "Dec 13",
+    "morning": [
+      "ISA/46.json",
+      "ISA/47.json",
+      "ISA/48.json",
+      "ISA/49.json",
+      "ISA/50.json",
+      "ISA/51.json",
+      "ISA/52.json",
+      "ISA/53.json",
+      "ISA/54.json"
+    ],
+    "evening": [
+      "ISA/55.json",
+      "ISA/56.json",
+      "ISA/57.json",
+      "ISA/58.json",
+      "ISA/59.json",
+      "ISA/60.json",
+      "ISA/61.json",
+      "ISA/62.json",
+      "ISA/63.json",
+      "ISA/64.json",
+      "ISA/65.json",
+      "ISA/66.json"
+    ],
+    "psalms": [
+      "PSA/86.json",
+      "PSA/87.json",
+      "PSA/88.json",
+      "PSA/89.json",
+      "PSA/90.json"
+    ]
+  },
+  {
+    "day": 17,
+    "date": "Dec 14",
+    "morning": [
+      "EZK/16.json",
+      "EZK/23.json",
+      "EZK/34.json",
+      "EZK/35.json",
+      "EZK/36.json",
+      "EZK/37.json",
+      "EZK/38.json",
+      "EZK/39.json"
+    ],
+    "evening": [
+      "EZK/40.json",
+      "EZK/41.json",
+      "EZK/42.json",
+      "EZK/43.json",
+      "EZK/44.json",
+      "EZK/45.json",
+      "EZK/46.json",
+      "EZK/47.json",
+      "EZK/48.json",
+      "DAN/7.json"
+    ],
+    "psalms": [
+      "PSA/91.json",
+      "PSA/92.json",
+      "PSA/93.json",
+      "PSA/94.json",
+      "PSA/95.json"
+    ]
+  },
+  {
+    "day": 18,
+    "date": "Dec 15",
+    "morning": [
+      "JOL/1.json",
+      "JOL/2.json",
+      "JOL/3.json",
+      "AMO/1.json",
+      "AMO/2.json",
+      "AMO/3.json",
+      "AMO/4.json",
+      "AMO/5.json",
+      "AMO/6.json",
+      "AMO/7.json",
+      "AMO/8.json",
+      "AMO/9.json"
+    ],
+    "evening": [
+      "JON/1.json",
+      "JON/2.json",
+      "JON/3.json",
+      "JON/4.json",
+      "MIC/1.json",
+      "MIC/2.json",
+      "MIC/3.json",
+      "MIC/4.json",
+      "MIC/5.json",
+      "MIC/6.json",
+      "MIC/7.json"
+    ],
+    "psalms": [
+      "PSA/96.json",
+      "PSA/97.json",
+      "PSA/98.json",
+      "PSA/99.json",
+      "PSA/100.json"
+    ]
+  },
+  {
+    "day": 19,
+    "date": "Dec 16",
+    "morning": [
+      "HAB/1.json",
+      "HAB/2.json",
+      "HAB/3.json",
+      "ZEP/1.json",
+      "ZEP/2.json",
+      "ZEP/3.json",
+      "HAG/1.json",
+      "HAG/2.json"
+    ],
+    "evening": [
+      "ZEC/1.json",
+      "ZEC/2.json",
+      "ZEC/3.json",
+      "ZEC/4.json",
+      "ZEC/5.json",
+      "ZEC/6.json",
+      "ZEC/7.json",
+      "ZEC/8.json",
+      "ZEC/9.json",
+      "ZEC/10.json",
+      "ZEC/11.json",
+      "ZEC/12.json",
+      "ZEC/13.json",
+      "ZEC/14.json",
+      "PRO/8.json"
+    ],
+    "psalms": [
+      "PSA/101.json",
+      "PSA/102.json",
+      "PSA/103.json",
+      "PSA/104.json",
+      "PSA/105.json"
+    ]
+  },
+  {
+    "day": 20,
+    "date": "Dec 17",
+    "morning": [
+      "2CH/36.json",
+      "MRK/1.json",
+      "MRK/2.json",
+      "MRK/3.json",
+      "MRK/4.json",
+      "MRK/5.json",
+      "MRK/6.json",
+      "MRK/7.json",
+      "MRK/8.json",
+      "MRK/9.json",
+      "MRK/10.json"
+    ],
+    "evening": [
+      "MRK/11.json",
+      "MRK/12.json",
+      "MRK/13.json",
+      "MRK/14.json",
+      "MRK/15.json",
+      "MRK/16.json",
+      "MAT/1.json",
+      "MAT/2.json",
+      "MAT/3.json",
+      "MAT/4.json"
+    ],
+    "psalms": [
+      "PSA/106.json",
+      "PSA/107.json",
+      "PSA/108.json",
+      "PSA/109.json",
+      "PSA/110.json"
+    ]
+  },
+  {
+    "day": 21,
+    "date": "Dec 18",
+    "morning": [
+      "MAT/5.json",
+      "MAT/6.json",
+      "MAT/7.json",
+      "MAT/8.json",
+      "MAT/9.json",
+      "MAT/10.json",
+      "MAT/11.json",
+      "MAT/12.json",
+      "MAT/13.json",
+      "MAT/14.json"
+    ],
+    "evening": [
+      "MAT/15.json",
+      "MAT/16.json",
+      "MAT/17.json",
+      "MAT/18.json",
+      "MAT/19.json",
+      "MAT/20.json",
+      "MAT/21.json",
+      "MAT/22.json",
+      "MAT/23.json",
+      "MAT/24.json",
+      "MAT/25.json"
+    ],
+    "psalms": [
+      "PSA/111.json",
+      "PSA/112.json",
+      "PSA/113.json",
+      "PSA/114.json",
+      "PSA/115.json",
+      "PSA/116.json",
+      "PSA/117.json",
+      "PSA/118.json"
+    ]
+  },
+  {
+    "day": 22,
+    "date": "Dec 19",
+    "morning": [
+      "MAT/26.json",
+      "MAT/27.json",
+      "MAT/28.json"
+    ],
+    "evening": [
+      "JHN/1.json",
+      "JHN/2.json",
+      "JHN/3.json",
+      "JHN/4.json",
+      "JHN/5.json",
+      "JHN/6.json",
+      "JHN/7.json",
+      "JHN/8.json",
+      "JHN/9.json",
+      "JHN/10.json",
+      "JHN/11.json"
+    ],
+    "psalms": [
+      "PSA/119.json"
+    ]
+  },
+  {
+    "day": 23,
+    "date": "Dec 20",
+    "morning": [
+      "JHN/12.json",
+      "JHN/13.json",
+      "JHN/14.json",
+      "JHN/15.json",
+      "JHN/16.json",
+      "JHN/17.json",
+      "JHN/18.json",
+      "JHN/19.json",
+      "JHN/20.json",
+      "JHN/21.json"
+    ],
+    "evening": [
+      "ACT/1.json",
+      "ACT/2.json",
+      "ACT/3.json",
+      "ACT/4.json",
+      "ACT/5.json",
+      "ACT/6.json",
+      "ACT/7.json"
+    ],
+    "psalms": [
+      "PSA/126.json",
+      "PSA/127.json",
+      "PSA/128.json",
+      "PSA/129.json",
+      "PSA/130.json"
+    ]
+  },
+  {
+    "day": 24,
+    "date": "Dec 21",
+    "morning": [
+      "ROM/1.json",
+      "ROM/2.json",
+      "ROM/3.json",
+      "ROM/4.json",
+      "ROM/5.json",
+      "ROM/6.json",
+      "ROM/7.json",
+      "ROM/8.json",
+      "ROM/9.json",
+      "ROM/10.json",
+      "ROM/11.json"
+    ],
+    "evening": [
+      "ROM/12.json",
+      "ROM/13.json",
+      "ROM/14.json",
+      "ROM/15.json",
+      "ROM/16.json"
+    ],
+    "psalms": [
+      "PSA/131.json",
+      "PSA/132.json",
+      "PSA/133.json",
+      "PSA/134.json",
+      "PSA/135.json"
+    ]
+  },
+  {
+    "day": 25,
+    "date": "Dec 22",
+    "morning": [
+      "1CO/12.json",
+      "1CO/13.json",
+      "1CO/14.json",
+      "1CO/15.json",
+      "1CO/16.json",
+      "1TH/1.json",
+      "1TH/2.json",
+      "1TH/3.json",
+      "1TH/4.json",
+      "1TH/5.json"
+    ],
+    "evening": [
+      "2TH/1.json",
+      "2TH/2.json",
+      "2TH/3.json",
+      "PHP/1.json",
+      "PHP/2.json",
+      "PHP/3.json",
+      "PHP/4.json",
+      "COL/1.json",
+      "COL/2.json",
+      "COL/3.json",
+      "COL/4.json"
+    ],
+    "psalms": [
+      "PSA/136.json",
+      "PSA/137.json",
+      "PSA/138.json",
+      "PSA/139.json",
+      "PSA/140.json"
+    ]
+  },
+  {
+    "day": 26,
+    "date": "Dec 23",
+    "morning": [
+      "HEB/1.json",
+      "HEB/2.json",
+      "HEB/3.json",
+      "HEB/4.json",
+      "HEB/5.json",
+      "HEB/6.json",
+      "HEB/7.json",
+      "HEB/8.json",
+      "HEB/9.json",
+      "HEB/10.json",
+      "HEB/11.json",
+      "HEB/12.json",
+      "HEB/13.json"
+    ],
+    "evening": [
+      "JAS/1.json",
+      "JAS/2.json",
+      "JAS/3.json",
+      "JAS/4.json",
+      "JAS/5.json",
+      "JUD/1.json"
+    ],
+    "psalms": [
+      "PSA/141.json",
+      "PSA/142.json",
+      "PSA/143.json",
+      "PSA/144.json",
+      "PSA/145.json"
+    ]
+  },
+  {
+    "day": 27,
+    "date": "Dec 24",
+    "morning": [
+      "REV/1.json",
+      "REV/2.json",
+      "REV/3.json",
+      "REV/4.json",
+      "REV/5.json",
+      "REV/6.json",
+      "REV/7.json",
+      "REV/8.json",
+      "REV/9.json",
+      "REV/10.json",
+      "REV/11.json"
+    ],
+    "evening": [
+      "REV/12.json",
+      "REV/13.json",
+      "REV/14.json",
+      "REV/15.json",
+      "REV/16.json",
+      "REV/17.json",
+      "REV/18.json",
+      "REV/19.json",
+      "REV/20.json",
+      "REV/21.json",
+      "REV/22.json"
+    ],
+    "psalms": [
+      "PSA/146.json",
+      "PSA/147.json",
+      "PSA/148.json",
+      "PSA/149.json",
+      "PSA/150.json"
+    ]
+  }
+]
