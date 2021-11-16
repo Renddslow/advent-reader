@@ -1,10 +1,11 @@
-const mri = require('mri');
+import mri from 'mri';
+import { build } from 'esbuild';
 
 const prog = mri(process.argv.slice(2), {
   boolean: ['watch', 'minify'],
 });
 
-require('esbuild').build({
+build({
   entryPoints: ['src/index.tsx'],
   bundle: true,
   platform: 'browser',
