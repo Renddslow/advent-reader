@@ -3,3 +3,5 @@ yarn-error.log*
 /data/raw
 /public/data
 /public/main.js
+.env
+.netlify
