@@ -1,4 +1,5 @@
 import { Fragment, h } from 'preact';
+import { useEffect } from 'preact/hooks';
 import { styled } from 'goober';
 import { Route, Switch } from 'wouter-preact';
 
@@ -7,6 +8,9 @@ import { useState } from 'preact/hooks';
 import Navigation from './Navigation';
 import Copyright from './Copyright';
 import Reading from './Reading';
+import Help from './Help';
+import Achievements from './Achievements';
+import Auth from './Auth';
 
 const Wrapper = styled('div')`
   display: block;
@@ -17,26 +21,37 @@ const Wrapper = styled('div')`
 `;
 
 const App = () => {
-  const [isAuthed, setIsAuthed] = useState<boolean | 'unknown'>(true); // TODO: auth
+  const [isAuthed, setIsAuthed] = useState<boolean | 'unknown'>('unknown'); // TODO: auth
+
+  useEffect(() => {
+    fetch('/.netlify/functions/validate').then((d) => {
+      if (d.status !== 200) {
+        setIsAuthed(false);
+      } else {
+        setIsAuthed(true);
+      }
+    });
+  }, []);
 
   return (
-    <Wrapper>
-      {isAuthed === true ? (
-        <Fragment>
+    <Fragment>
+      {isAuthed === true && (
+        <Wrapper>
           <Navigation />
           <Switch>
             <Route path="/" component={Home} />
             <Route path="/days/:day/:type" component={Reading} />
+            <Route path="/help" component={Help} />
+            <Route path="/achievements" component={Achievements} />
             <Route component={Home} />
           </Switch>
-        </Fragment>
-      ) : (
-        <div />
+          <footer>
+            <Copyright />
+          </footer>
+        </Wrapper>
       )}
-      <footer>
-        <Copyright />
-      </footer>
-    </Wrapper>
+      {!isAuthed && <Auth />}
+    </Fragment>
   );
 };
 

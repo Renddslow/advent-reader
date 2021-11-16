@@ -1,5 +1,5 @@
-import { h } from 'preact';
-import { styled } from 'goober';
+import { h, Fragment } from 'preact';
+import { styled, keyframes } from 'goober';
 import { useLocation } from 'wouter-preact';
 import { useEffect, useState } from 'preact/hooks';
 import condense from './condense';
@@ -12,6 +12,44 @@ const Chapter = styled('h2')`
 
   &:first-child {
     margin-top: 48px;
+  }
+`;
+
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const CompleteButton = styled<{ completing: boolean }>('button')`
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 25px;
+  font-size: 14px;
+  background: #222;
+  color: #fff;
+  appearance: none;
+  border: 0;
+  margin: 24px auto 0;
+  cursor: pointer;
+
+  .material-icons {
+    font-size: 20px;
+    margin-right: 8px;
+  }
+
+  span {
+    animation-name: ${rotate};
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: ${(props) => (props.completing ? 'running' : 'paused')};
   }
 `;
 
@@ -61,7 +99,10 @@ const BOOK_NAME_MAP = {
 const Reading = () => {
   const [reading, setReading] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [completing, setCompleting] = useState(false);
   const [pathname] = useLocation();
+
+  const complete = false; // TODO
 
   const [, day, type] = pathname.replace(/^\//, '').split('/');
 
@@ -73,6 +114,23 @@ const Reading = () => {
         setLoading(false);
       });
   }, []);
+
+  const handleComplete = async () => {
+    setCompleting(true);
+    fetch('/.netlify/functions/complete', {
+      method: 'POST',
+      body: JSON.stringify({
+        day,
+        read: new Date().toISOString(),
+      }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    }).then((d) => {
+      setCompleting(false);
+      window.location.href = '/';
+    });
+  };
 
   return (
     <div>
@@ -87,6 +145,18 @@ const Reading = () => {
                 </Chapter>
               );
           })}
+      {!loading && !complete && (
+        <CompleteButton onClick={handleComplete} completing={completing} disabled={completing}>
+          {completing ? (
+            <span className="material-icons">motion_photos_on</span>
+          ) : (
+            <Fragment>
+              <span className="material-icons">check</span>
+              <span>Mark Complete</span>
+            </Fragment>
+          )}
+        </CompleteButton>
+      )}
     </div>
   );
 };

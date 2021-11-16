@@ -34,8 +34,7 @@ const Home = () => {
       {!loading &&
         plan.map((day, idx) => {
           const unlockDay = add(startDate, { days: idx });
-          const unlocked =
-            idx === 0 || isSameDay(unlockDay, new Date()) || isBefore(unlockDay, new Date());
+          const unlocked = isSameDay(unlockDay, new Date()) || isBefore(unlockDay, new Date());
 
           return <Panel locked={!unlocked} complete={false} {...day} key={`day-${day.day}`} />;
         })}

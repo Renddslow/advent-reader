@@ -8,7 +8,7 @@ const Header = styled('header')`
   display: grid;
   grid-template-columns: repeat(3, minmax(0, max-content));
   justify-content: space-between;
-  background: #4600ff;
+  background: #87109e;
   align-items: center;
   color: #fff;
   transition: padding 0.2s ease-in-out;
@@ -26,8 +26,8 @@ const Navigation = () => {
   const [pathname] = useLocation();
   return (
     <Header home={pathname === '/'}>
-      <Link href="/account">
-        <span class="material-icons-outlined">face</span>
+      <Link href="/help">
+        <span class="material-icons-outlined">help</span>
       </Link>
       {pathname === '/' ? (
         <h1>Home</h1>
