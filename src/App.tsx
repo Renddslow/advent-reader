@@ -5,13 +5,13 @@ import { Route, Switch } from 'wouter-preact';
 import Home from './Home';
 import { useState } from 'preact/hooks';
 import Navigation from './Navigation';
+import Copyright from './Copyright';
 
 const Wrapper = styled('div')`
   display: block;
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
-  background: #f5f5f5;
   height: 100%;
 `;
 
@@ -32,6 +32,9 @@ const App = () => {
       ) : (
         <div />
       )}
+      <footer>
+        <Copyright />
+      </footer>
     </Wrapper>
   );
 };

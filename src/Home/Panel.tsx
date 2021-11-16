@@ -90,7 +90,7 @@ const Panel = ({
             day={day}
             type="Morning"
             readings={morning}
-            locked={false}
+            locked={locked}
             complete={false}
           />
           <Reading
@@ -98,10 +98,10 @@ const Panel = ({
             day={day}
             type="Evening"
             readings={evening}
-            locked={false}
+            locked={locked}
             complete={false}
           />
-          <Reading day={day} type="Psalms" readings={psalms} locked={false} complete={false} />
+          <Reading day={day} type="Psalms" readings={psalms} locked={locked} complete={false} />
         </Fragment>
       )}
     </Fragment>
