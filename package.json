@@ -15,8 +15,9 @@
 		"build:clean": "node tools/cleanJSON.js",
 		"build:merge": "node tools/mergeFiles.js",
 		"build:data": "run-s build:plan build:yves build:html build:clean build:merge",
-		"build:js": "node build.js",
-		"build": "run-p build:data build:js"
+		"build:js": "node build.js --minify",
+		"build": "run-p build:data build:js",
+		"start": "node build.js --watch"
 	},
 	"husky": {
 		"hooks": {
@@ -92,7 +93,6 @@
 		"sort-on": "^4.1.1",
 		"unified": "^10.1.0",
 		"uuid": "^8.3.2",
-		"verse-reference-regex": "^1.3.0",
 		"wouter": "^2.7.4",
 		"wouter-preact": "^2.7.4"
 	}

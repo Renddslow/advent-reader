@@ -2601,11 +2601,6 @@ body-parser@1.19.0, body-parser@^1.19.0:
     raw-body "2.4.0"
     type-is "~1.6.17"
 
-books-of-the-bible@~1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/books-of-the-bible/-/books-of-the-bible-1.0.0.tgz#f16fffcf611fc88059051296acef4db948fb95a2"
-  integrity sha512-1svLUGyYcXYVmJOdP7bFQFxjErcLpJ92Gl/3TiImAJNSd1iQSq6yDBHoGBtqZf5mZZ2YIgKKYlBecRaRYiqbBw==
-
 boolbase@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
@@ -4555,11 +4550,6 @@ find-up@^5.0.0:
   dependencies:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
-
-flatmap@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/flatmap/-/flatmap-0.0.3.tgz#1f18a4d938152d495965f9c958d923ab2dd669b4"
-  integrity sha1-Hxik2TgVLUlZZfnJWNkjqy3WabQ=
 
 flatten@^1.0.2:
   version "1.0.3"
@@ -8219,11 +8209,6 @@ regenerator-transform@^0.14.2:
   dependencies:
     "@babel/runtime" "^7.8.4"
 
-regex-fun@~2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/regex-fun/-/regex-fun-2.0.2.tgz#0eeac0699b8e2619934f1e89fc982b08b3d2f3ff"
-  integrity sha512-QG/HjMuNfEHLJgj7hgGxYKRDpiDJJRWbJPSK4bO9xxRMcwgVvLqGssytQEuM7gc5yIDFWsgmtr1B/4yAqyai8A==
-
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/regex-not/-/regex-not-1.0.2.tgz#1f4ece27e00b0b65e0247a6810e6a85d83a5752c"
@@ -9776,15 +9761,6 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
-
-verse-reference-regex@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/verse-reference-regex/-/verse-reference-regex-1.3.0.tgz#36752b016df383fb7de7abc39991c43f579dda9a"
-  integrity sha512-k9jJvpZMYAFbVGPwcUmtxMYSQZjtQJJnJEkykbBC4WDHuS0FmlJzfEhcqIcWZY3nmsUW29DmHzFOWiJ53gFf6w==
-  dependencies:
-    books-of-the-bible "~1.0.0"
-    flatmap "0.0.3"
-    regex-fun "~2.0.2"
 
 vfile-location@^4.0.0:
   version "4.0.1"
