@@ -19,7 +19,7 @@ const rollupFiles = async (files) => {
       book,
       chapter,
     });
-    acc.push(item.content);
+    acc.push(...item.content);
     acc.push({ type: 'chapter_end' });
     return acc;
   }, []);

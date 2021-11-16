@@ -6,6 +6,7 @@ import Home from './Home';
 import { useState } from 'preact/hooks';
 import Navigation from './Navigation';
 import Copyright from './Copyright';
+import Reading from './Reading';
 
 const Wrapper = styled('div')`
   display: block;
@@ -16,7 +17,7 @@ const Wrapper = styled('div')`
 `;
 
 const App = () => {
-  const [isAuthed, setIsAuthed] = useState<boolean | 'unknown'>(true);
+  const [isAuthed, setIsAuthed] = useState<boolean | 'unknown'>(true); // TODO: auth
 
   return (
     <Wrapper>
@@ -25,7 +26,7 @@ const App = () => {
           <Navigation />
           <Switch>
             <Route path="/" component={Home} />
-            <Route path="/days/:day/:type">Hello</Route>
+            <Route path="/days/:day/:type" component={Reading} />
             <Route component={Home} />
           </Switch>
         </Fragment>
