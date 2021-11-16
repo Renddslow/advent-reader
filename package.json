@@ -17,7 +17,9 @@
 		"build:data": "run-s build:plan build:yves build:html build:clean build:merge",
 		"build:js": "node build.js --minify",
 		"build": "run-p build:data build:js",
-		"start": "node build.js --watch"
+		"postbuild": "cp data/plan.json public/data",
+		"start": "netlify dev",
+		"watch": "node build.js --watch"
 	},
 	"husky": {
 		"hooks": {
