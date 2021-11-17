@@ -100,19 +100,31 @@ const Reading = () => {
   const [reading, setReading] = useState([]);
   const [loading, setLoading] = useState(true);
   const [completing, setCompleting] = useState(false);
+  const [complete, setComplete] = useState(false);
   const [pathname] = useLocation();
-
-  const complete = false; // TODO
 
   const [, day, type] = pathname.replace(/^\//, '').split('/');
 
   useEffect(() => {
-    fetch(`/data/${day}/${type}.json`)
-      .then((d) => d.json())
-      .then((d) => {
-        setReading(d);
-        setLoading(false);
-      });
+    Promise.all([
+      fetch(`/data/${day}/${type}.json`)
+        .then((d) => d.json())
+        .then((d) => {
+          setReading(d);
+        }),
+      fetch('/.netlify/functions/completion', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          day: parseInt(day, 10),
+          type,
+        }),
+      }).then((d) => setComplete(d.status === 200)),
+    ]).then(() => {
+      setLoading(false);
+    });
   }, []);
 
   const handleComplete = async () => {
@@ -121,6 +133,7 @@ const Reading = () => {
       method: 'POST',
       body: JSON.stringify({
         day,
+        type,
         read: new Date().toISOString(),
       }),
       headers: {

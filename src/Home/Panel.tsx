@@ -4,11 +4,12 @@ import { useState } from 'preact/hooks';
 
 import Bubble from './Bubble';
 import Reading from './Reading';
+import { Complete } from './types';
 
 type Props = {
   day: number;
   date: string;
-  complete: boolean;
+  completions: Complete[];
   locked: boolean;
   morningTitle: string;
   eveningTitle: string;
@@ -56,20 +57,25 @@ const Panel = ({
   evening,
   psalms,
   locked,
-  complete,
+  completions,
   initialOpen = false,
   morningTitle,
   eveningTitle,
 }: Props) => {
   const [open, setOpen] = useState<boolean>(initialOpen);
 
+  const completionMap = completions.reduce((acc, item) => {
+    acc[item.type] = true;
+    return acc;
+  }, {});
+
   return (
     <Fragment>
       <Day onClick={() => setOpen((o) => !o)}>
         <Row>
-          <Bubble locked={locked} complete={complete}>
+          <Bubble locked={locked} complete={completions.length === 3}>
             {locked && <span class="material-icons-outlined">lock</span>}
-            {complete && <span class="material-icons-outlined">check</span>}
+            {completions.length === 3 && <span class="material-icons-outlined">check</span>}
           </Bubble>
           <span>
             Day {day}: {date}
@@ -91,7 +97,7 @@ const Panel = ({
             type="Morning"
             readings={morning}
             locked={locked}
-            complete={false}
+            complete={completionMap['morning']}
           />
           <Reading
             title={eveningTitle}
@@ -99,9 +105,15 @@ const Panel = ({
             type="Evening"
             readings={evening}
             locked={locked}
-            complete={false}
+            complete={completionMap['evening']}
           />
-          <Reading day={day} type="Psalms" readings={psalms} locked={locked} complete={false} />
+          <Reading
+            day={day}
+            type="Psalms"
+            readings={psalms}
+            locked={locked}
+            complete={completionMap['psalms']}
+          />
         </Fragment>
       )}
     </Fragment>
