@@ -4,6 +4,7 @@ import { add, isSameDay, isBefore } from 'date-fns';
 
 import Panel from './Panel';
 import { Complete } from './types';
+import { styled } from 'goober';
 
 type Plan = {
   day: number;
@@ -14,6 +15,12 @@ type Plan = {
   evening: string;
   psalms: string;
 };
+
+const Wrapper = styled('div')`
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+`;
 
 const startDate = new Date(2021, 10, 28);
 
@@ -40,7 +47,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <Wrapper>
       {!loading &&
         plan.map((day, idx) => {
           const unlockDay = add(startDate, { days: idx });
@@ -57,7 +64,7 @@ const Home = () => {
             />
           );
         })}
-    </div>
+    </Wrapper>
   );
 };
 

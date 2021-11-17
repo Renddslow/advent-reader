@@ -96,6 +96,12 @@ const BOOK_NAME_MAP = {
   PSA: 'Psalm',
 };
 
+const Wrapper = styled('div')`
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+`;
+
 const Reading = () => {
   const [reading, setReading] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -146,7 +152,7 @@ const Reading = () => {
   };
 
   return (
-    <div>
+    <Wrapper>
       {loading
         ? 'Loading...'
         : condense(reading).map((unit) => {
@@ -170,7 +176,7 @@ const Reading = () => {
           )}
         </CompleteButton>
       )}
-    </div>
+    </Wrapper>
   );
 };
 

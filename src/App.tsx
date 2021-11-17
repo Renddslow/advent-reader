@@ -15,13 +15,18 @@ import Auth from './Auth';
 const Wrapper = styled('div')`
   display: block;
   width: 100%;
-  max-width: 600px;
   margin: 0 auto;
   height: 100%;
 `;
 
+const Footer = styled('footer')`
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+`;
+
 const App = () => {
-  const [isAuthed, setIsAuthed] = useState<boolean | 'unknown'>('unknown'); // TODO: auth
+  const [isAuthed, setIsAuthed] = useState<boolean | 'unknown'>('unknown');
 
   useEffect(() => {
     fetch('/.netlify/functions/validate').then((d) => {
@@ -45,9 +50,9 @@ const App = () => {
             <Route path="/achievements" component={Achievements} />
             <Route component={Home} />
           </Switch>
-          <footer>
+          <Footer>
             <Copyright />
-          </footer>
+          </Footer>
         </Wrapper>
       )}
       {!isAuthed && <Auth />}

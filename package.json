@@ -7,7 +7,7 @@
 	"license": "MIT",
 	"author": "Matt McElwee <mubatt@wyopub.com>",
 	"main": "dist/index.js",
-	"//type": "module",
+	"type": "module",
 	"scripts": {
 		"build:plan": "node tools/convertPlan.js",
 		"build:yves": "node tools/parseYves.js",
