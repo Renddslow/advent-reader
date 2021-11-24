@@ -1,12 +1,12 @@
 import { styled } from 'goober';
-import { h } from 'preact';
+import { ComponentChild, h } from 'preact';
 
 type Props = {
   achieved?: string;
   completed: boolean;
   title: string;
   description: string;
-  image: string;
+  component: ComponentChild;
 };
 
 const CardWrapper = styled('div')`
@@ -17,10 +17,11 @@ const CardWrapper = styled('div')`
   grid-template-columns: 1fr minmax(0, max-content);
   overflow: hidden;
   z-index: 1;
+  padding: 12px 6px 12px 24px;
 `;
 
 const CardBody = styled('div')`
-  padding: 24px;
+  padding: 12px 0;
 
   h2 {
     font-size: 18px;
@@ -28,12 +29,13 @@ const CardBody = styled('div')`
 
   p {
     font-size: 14px;
+    margin-top: 8px;
   }
 `;
 
 const CardBadge = styled('div')`
-  width: 100px;
-  height: 100px;
+  width: 118px;
+  height: 121px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,6 +79,9 @@ const Bubble = styled('div')`
 `;
 
 const Card = (props: Props) => {
+  const Badge = () => props.component;
+
+  // @ts-ignore
   return (
     <CardWrapper>
       <CardBody>
@@ -98,7 +103,8 @@ const Card = (props: Props) => {
       </CardBody>
       <CardBadge>
         {props.completed ? (
-          <img src={props.image} alt={`Badge for "${props.title}"`} />
+          /* @ts-ignore */
+          <Badge />
         ) : (
           <span class="material-icons-outlined">locked</span>
         )}

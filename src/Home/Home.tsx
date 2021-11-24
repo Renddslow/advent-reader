@@ -1,10 +1,12 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { add, isSameDay, isBefore } from 'date-fns';
+import shouldIntercept from 'click-should-be-intercepted-for-navigation';
 
-import Panel from './Panel';
+import Panel, { Day, ExpandButton } from './Panel';
 import { Complete } from './types';
 import { styled } from 'goober';
+import { useLocation } from 'wouter-preact';
 
 type Plan = {
   day: number;
@@ -28,6 +30,14 @@ const Home = () => {
   const [plan, setPlan] = useState<Plan[]>([]);
   const [loading, setLoading] = useState(true);
   const [completions, setCompletions] = useState<Complete[]>([]);
+  const [, setLocation] = useLocation();
+
+  const handleClick = (e) => {
+    if (shouldIntercept(e)) {
+      e.preventDefault();
+      setLocation('/help');
+    }
+  };
 
   useEffect(() => {
     fetch('/data/plan.json')
@@ -48,11 +58,16 @@ const Home = () => {
 
   return (
     <Wrapper>
+      <Day as="a" href="/help" onClick={handleClick}>
+        <span>Introduction (Start Here)</span>
+        <ExpandButton>
+          <span class="material-icons-outlined">navigate_next</span>
+        </ExpandButton>
+      </Day>
       {!loading &&
         plan.map((day, idx) => {
           const unlockDay = add(startDate, { days: idx });
-          const unlocked =
-            day.day === 1 || isSameDay(unlockDay, new Date()) || isBefore(unlockDay, new Date());
+          const unlocked = isSameDay(unlockDay, new Date()) || isBefore(unlockDay, new Date());
           const dayCompletions = completions.filter((c) => c.day === day.day);
 
           return (

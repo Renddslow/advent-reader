@@ -19,7 +19,7 @@ type Props = {
   initialOpen?: boolean;
 };
 
-const Day = styled('button')`
+export const Day = styled('button')`
   width: 100%;
   padding: 12px 24px;
   background: #fff;
@@ -37,14 +37,14 @@ const Day = styled('button')`
   cursor: pointer;
 `;
 
-const Row = styled('div')`
+export const Row = styled('div')`
   grid-template-columns: repeat(2, minmax(0, max-content));
   grid-gap: 12px;
   display: grid;
   align-items: center;
 `;
 
-const ExpandButton = styled('span')`
+export const ExpandButton = styled('span')`
   display: block;
   font-size: 16px;
   color: #666;
