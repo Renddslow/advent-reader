@@ -52,7 +52,7 @@ const DayStyled = ({ type, readings, locked, complete, title }: Props) => (
   <LinkStyle>
     <Row>
       <Bubble locked={locked} complete={complete}>
-        {locked && <span class="material-icons-outlined">lock</span>}
+        {locked && !complete && <span class="material-icons-outlined">lock</span>}
         {complete && <span class="material-icons-outlined">check</span>}
       </Bubble>
       <div>

@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { styled } from 'goober';
 import { useEffect, useState } from 'preact/hooks';
+import calculateBadge from 'gamif';
 
 import { Complete } from '../Home/types';
 import badges from '../badges';
@@ -41,6 +42,12 @@ const Status = styled('div')`
   }
 `;
 
+const Title = styled('div')`
+  width: 100%;
+  max-width: 960px;
+  margin: 24px auto;
+`;
+
 const Achievements = () => {
   const [completions, setCompletions] = useState<Complete[]>([]);
 
@@ -54,20 +61,65 @@ const Achievements = () => {
   const psalmsBadges = badges.filter(({ psalms }) => psalms);
   const hiddenBadges = badges.filter(({ hidden }) => hidden);
 
-  // Calculate last `read` of a completion for a given badge
-  // TODO: calculate badge earnings
+  const calculator = calculateBadge(completions);
+
+  // TODO: Add achivement date -> Calculate last `read` of a completion for a given badge
+  // TODO: fix
+  const earnedProgressBadges = progressBadges.filter((badge) => calculator(badge.condition));
+  const earnedPsalmBadges = psalmsBadges.filter((badge) => calculator(badge.condition));
+  const earnedHiddenBadges = hiddenBadges.filter((badge) => calculator(badge.condition));
 
   return (
     <Wrapper>
       <Status>
-        <Progress total={progressBadges.length} value={0} label="Progress Badges Earned" />
-        <Progress total={psalmsBadges.length} value={0} label="Psalms Badges Earned" />
-        <Progress total={hiddenBadges.length} value={0} label="Hidden Badges Earned" />
-        <Progress total={150} value={0} label="Psalms Read" />
+        <Progress
+          total={progressBadges.length}
+          value={earnedProgressBadges.length}
+          label="Progress Badges Earned"
+        />
+        <Progress
+          total={psalmsBadges.length}
+          value={earnedPsalmBadges.length}
+          label="Psalms Badges Earned"
+        />
+        <Progress
+          total={hiddenBadges.length}
+          value={earnedHiddenBadges.length}
+          label="Hidden Badges Earned"
+        />
+        <Progress
+          total={150}
+          value={completions.filter((c) => c.type.includes('psalms')).length}
+          label="Psalms Read"
+        />
       </Status>
+      <Title>
+        <h2>Progress Badges</h2>
+      </Title>
       <CardsGrid>
         {progressBadges.map((badge) => (
-          <Card {...badge} completed={false} />
+          <Card
+            {...badge}
+            completed={!!earnedProgressBadges.find((b) => b.title === badge.title)}
+          />
+        ))}
+      </CardsGrid>
+      {!!earnedHiddenBadges.length && (
+        <Title>
+          <h2>Hidden Badges</h2>
+        </Title>
+      )}
+      <CardsGrid>
+        {earnedHiddenBadges.map((badge) => (
+          <Card {...badge} completed />
+        ))}
+      </CardsGrid>
+      <Title>
+        <h2>Psalm Badges</h2>
+      </Title>
+      <CardsGrid>
+        {psalmsBadges.map((badge) => (
+          <Card {...badge} completed={!!earnedPsalmBadges.find((b) => b.title === badge.title)} />
         ))}
       </CardsGrid>
     </Wrapper>

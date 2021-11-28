@@ -52,36 +52,30 @@ type Props = {
   color: keyof typeof COLORS;
 };
 
-const Hex = styled('div')`
-  position: relative;
-`;
-
-const Inner = styled('svg')`
-  position: absolute;
-  left: 10px;
-  top: 10px;
-`;
-
 const Badge = (props: Props) => {
   const { border, bg } = COLORS[props.color];
 
   return (
-    <Hex>
-      <Inner xmlns="http://www.w3.org/2000/svg" width="100" height="100" class="inner">
-        <path
-          stroke="none"
-          fill={bg}
-          d="M40 2.7735026918963a20 20 0 0 1 20 0l25.899346400575 14.952994616207a20 20 0 0 1 10 17.320508075689l0 29.905989232415a20 20 0 0 1 -10 17.320508075689l-25.899346400575 14.952994616207a20 20 0 0 1 -20 0l-25.899346400575 -14.952994616207a20 20 0 0 1 -10 -17.320508075689l0 -29.905989232415a20 20 0 0 1 10 -17.320508075689"
-        />
-      </Inner>
-      <svg xmlns="http://www.w3.org/2000/svg" width="118" height="118">
-        <path
-          stroke="none"
-          fill={border}
-          d="M49 2.7735026918963a20 20 0 0 1 20 0l33.693575034635 19.452994616207a20 20 0 0 1 10 17.320508075689l0 38.905989232415a20 20 0 0 1 -10 17.320508075689l-33.693575034635 19.452994616207a20 20 0 0 1 -20 0l-33.693575034635 -19.452994616208a20 20 0 0 1 -10 -17.320508075689l0 -38.905989232415a20 20 0 0 1 10 -17.320508075689"
-        />
-      </svg>
-    </Hex>
+    <svg viewBox="0 0 120 100">
+      <path
+        stroke={border}
+        stroke-width={4}
+        fill={bg}
+        d="M38,2
+           L82,2
+           A12,12 0 0,1 94,10
+           L112,44
+           A12,12 0 0,1 112,56
+           L94,90
+           A12,12 0 0,1 82,98
+           L38,98
+           A12,12 0 0,1 26,90
+           L8,56
+           A12,12 0 0,1 8,44
+           L26,10
+           A12,12 0 0,1 38,2"
+      />
+    </svg>
   );
 };
 

@@ -1,16 +1,7 @@
 import { ComponentChild } from 'preact';
+import { Condition } from 'gamif/dist/types';
 
 import { default as Component } from './Badge';
-
-export type Condition = { args: string[] } & (
-  | {
-      type: 'in';
-    }
-  | {
-      type: 'perfect in range' | 'in range';
-      includePsalms?: boolean;
-    }
-);
 
 const Badge = (
   title: string,
@@ -29,6 +20,15 @@ const Badge = (
 });
 
 const badges = [
+  Badge(
+    'The Journey Begins',
+    `You've started your Advent reading journey`,
+    Component({ color: 'red' }),
+    {
+      type: 'in',
+      args: ['1/morning'],
+    },
+  ),
   Badge('In the Beginning', `You read the whole book of Genesis`, Component({ color: 'blue' }), {
     type: 'in range',
     args: ['1/morning', '2/evening'],
@@ -39,7 +39,7 @@ const badges = [
     Component({ color: 'auburn' }),
     {
       type: 'in range',
-      args: [],
+      args: ['3/morning', '4/evening'],
     },
   ),
   Badge(
@@ -48,12 +48,12 @@ const badges = [
     Component({ color: 'yellow' }),
     {
       type: 'in range',
-      args: [],
+      args: ['5/morning', '5/evening'],
     },
   ),
   Badge('A Second Time', 'You read the whole book of Deuteronomy', Component({ color: 'orange' }), {
     type: 'in range',
-    args: [],
+    args: ['6/morning', '7/evening'],
   }),
   Badge(
     'Son of Nun',
@@ -61,16 +61,16 @@ const badges = [
     Component({ color: 'teal' }),
     {
       type: 'in range',
-      args: [],
+      args: ['8/morning', '8/evening'],
     },
   ),
   Badge('Cried Out to YHWH', 'You read the whole book of Judges', Component({ color: 'red' }), {
     type: 'in range',
-    args: [],
+    args: ['8/evening', '9/evening'],
   }),
   Badge(`Where You Go, I'll Go`, 'You read the whole book of Ruth', Component({ color: 'pink' }), {
     type: 'in',
-    args: [],
+    args: ['10/morning'],
   }),
   Badge(
     'The End of a Dynasty',
@@ -78,7 +78,7 @@ const badges = [
     Component({ color: 'orange' }),
     {
       type: 'in range',
-      args: [],
+      args: ['11/morning', '11/evening'],
     },
   ),
   Badge(
@@ -87,12 +87,12 @@ const badges = [
     Component({ color: 'auburn' }),
     {
       type: 'in range',
-      args: [],
+      args: ['11/evening', '12/evening'],
     },
   ),
   Badge('The Fall of Kings', 'You read the whole book of 1 Kings', Component({ color: 'purple' }), {
     type: 'in range',
-    args: [],
+    args: ['13/morning', '13/evening'],
   }),
   Badge(
     'Away from Her Land',
@@ -100,7 +100,7 @@ const badges = [
     Component({ color: 'darkBlue' }),
     {
       type: 'in range',
-      args: [],
+      args: ['14/morning', '15/morning'],
     },
   ),
   Badge(
@@ -109,7 +109,7 @@ const badges = [
     Component({ color: 'teal' }),
     {
       type: 'in',
-      args: [],
+      args: ['15/morning'],
     },
     true,
   ),
@@ -119,7 +119,7 @@ const badges = [
     Component({ color: 'pink' }),
     {
       type: 'in range',
-      args: [],
+      args: ['15/morning', '15/evening'],
     },
   ),
   Badge(
@@ -128,7 +128,7 @@ const badges = [
     Component({ color: 'red' }),
     {
       type: 'in range',
-      args: [],
+      args: ['15/evening', '16/evening'],
     },
   ),
   Badge(
@@ -137,7 +137,7 @@ const badges = [
     Component({ color: 'purple' }),
     {
       type: 'in',
-      args: [],
+      args: ['17/morning'],
     },
     true,
   ),
@@ -147,7 +147,7 @@ const badges = [
     Component({ color: 'green' }),
     {
       type: 'in range',
-      args: [],
+      args: ['17/morning', '17/evening'],
     },
   ),
   Badge(
@@ -156,7 +156,7 @@ const badges = [
     Component({ color: 'orange' }),
     {
       type: 'in',
-      args: [],
+      args: ['18/morning'],
     },
   ),
   Badge(
@@ -165,7 +165,7 @@ const badges = [
     Component({ color: 'lime' }),
     {
       type: 'in',
-      args: [],
+      args: ['18/evening'],
     },
   ),
   Badge(
@@ -174,7 +174,7 @@ const badges = [
     Component({ color: 'yellow' }),
     {
       type: 'in',
-      args: [],
+      args: ['19/morning'],
     },
   ),
   Badge(
@@ -183,16 +183,16 @@ const badges = [
     Component({ color: 'teal' }),
     {
       type: 'in range',
-      args: [],
+      args: ['18/morning', '19/evening'],
     },
   ),
   Badge('The Son of Man', 'You read the whole book of Mark', Component({ color: 'red' }), {
     type: 'in range',
-    args: [],
+    args: ['20/morning', '20/evening'],
   }),
   Badge('A New Moses', 'You read the whole book of Matthew', Component({ color: 'green' }), {
     type: 'in range',
-    args: [],
+    args: ['20/evening', '22/morning'],
   }),
   Badge(
     'A Torah Psalm',
@@ -200,14 +200,14 @@ const badges = [
     () => {},
     {
       type: 'in',
-      args: [],
+      args: ['22/psalms'],
     },
     false,
     true,
   ),
   Badge('The Word Became Flesh', 'You read the whole book of John', Component({ color: 'blue' }), {
     type: 'in range',
-    args: [],
+    args: ['22/evening', '23/morning'],
   }),
   Badge(
     'Seated at the Right Hand',
@@ -215,13 +215,13 @@ const badges = [
     Component({ color: 'pink' }),
     {
       type: 'in',
-      args: [],
+      args: ['23/evening'],
     },
     true,
   ),
   Badge('The Family of God', 'You read the whole book of Romans', Component({ color: 'orange' }), {
     type: 'in range',
-    args: [],
+    args: ['24/morning', '24/evening'],
   }),
   Badge(
     'The Resurrection of the Body',
@@ -229,7 +229,7 @@ const badges = [
     Component({ color: 'teal' }),
     {
       type: 'in',
-      args: [],
+      args: ['25/morning'],
     },
     true,
   ),
@@ -239,12 +239,12 @@ const badges = [
     Component({ color: 'yellow' }),
     {
       type: 'in range',
-      args: [],
+      args: ['24/morning', '25/evening'],
     },
   ),
   Badge('A Great High Priest', 'You read the whole book of Hebrews', Component({ color: 'red' }), {
     type: 'in',
-    args: [],
+    args: ['26/morning'],
   }),
   Badge(
     'Brothers of Jesus',
@@ -252,12 +252,12 @@ const badges = [
     Component({ color: 'green' }),
     {
       type: 'in',
-      args: [],
+      args: ['26/evening'],
     },
   ),
   Badge('The End', 'You read the whole book of Revelation', Component({ color: 'darkBlue' }), {
     type: 'in range',
-    args: [],
+    args: ['27/morning', '27/evening'],
   }),
 ];
 

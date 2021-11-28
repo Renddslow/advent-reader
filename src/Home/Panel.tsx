@@ -74,7 +74,9 @@ const Panel = ({
       <Day onClick={() => setOpen((o) => !o)}>
         <Row>
           <Bubble locked={locked} complete={completions.length === 3}>
-            {locked && <span class="material-icons-outlined">lock</span>}
+            {locked && completions.length !== 3 && (
+              <span class="material-icons-outlined">lock</span>
+            )}
             {completions.length === 3 && <span class="material-icons-outlined">check</span>}
           </Bubble>
           <span>

@@ -8,7 +8,7 @@ const Bubble = styled<{ locked: boolean }>('div')`
   border-radius: 50%;
   position: relative;
   background: ${(props) => {
-    if (props.locked) {
+    if (!props.complete && props.locked) {
       return '#666';
     }
 
