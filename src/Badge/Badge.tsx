@@ -46,6 +46,10 @@ const COLORS = {
     border: '#921b08',
     bg: '#fc492a',
   },
+  gray: {
+    border: '#222',
+    bg: '#555',
+  },
 };
 
 type Props = {
