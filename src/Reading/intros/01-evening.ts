@@ -1,1 +1,7 @@
-export default ``;
+export default `
+The life of Abraham is quite interesting within the narrative of Genesis. It maks up a major quarter of the book, for starters. But it also follows a small family, elected by God, and removed from one of the quickly growing empires of the Ancient Near East: Babylon. Babylon becomes something of an archetype of human corruption, power, and evil in the earliest parts of the Bible, and it's something that will reverberate straight through to the end of Revelation. So it is interesting then that the story of the nation of Israel begins with an individual called out of that land specifically.
+
+The Abraham story is incredibly frustrating. We see throughout the story YHWH blessing, protecting, and favouring Abraham, but time and again, Abraham doesn't trust God, goes his own way, and acts just like the nations around him. He lies to kings, twice tries to develop a lineage without God, and even sexually exploits a slave. All of this is built around a major theme that we saw at the end of this morning's reading: making a name for oneself.
+
+See the project of Babylon sees greatness in terms of exploits and legacy. But YHWH sees greatness as justice, mercy, redemption, and grace. God's project of restoration was to be initiated _through_ Abraham's family, but that was going to look like trust and self-sacrifice, not prowess on the battlefield or impressive, heroic offspring.
+`;
