@@ -81,11 +81,15 @@ const Achievements = () => {
           value={earnedPsalmBadges.length}
           label="Psalms Badges Earned"
         />
-        <Progress
-          total={hiddenBadges.length}
-          value={earnedHiddenBadges.length}
-          label="Hidden Badges Earned"
-        />
+        {earnedHiddenBadges.length ? (
+          <Progress
+            total={hiddenBadges.length}
+            value={earnedHiddenBadges.length}
+            label="Hidden Badges Earned"
+          />
+        ) : (
+          <div />
+        )}
         <Progress
           total={150}
           value={completions.filter((c) => c.type.includes('psalms')).length}
