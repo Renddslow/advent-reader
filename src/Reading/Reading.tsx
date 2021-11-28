@@ -2,8 +2,10 @@ import { h, Fragment } from 'preact';
 import { styled, keyframes } from 'goober';
 import { useLocation } from 'wouter-preact';
 import { useEffect, useState } from 'preact/hooks';
+
 import condense from './condense';
 import Paragraph from './Paragraph';
+import Intro from './Intro';
 
 const Chapter = styled('h2')`
   font-size: 20px;
@@ -153,6 +155,7 @@ const Reading = () => {
 
   return (
     <Wrapper>
+      {type !== 'psalms' && <Intro type={type as 'morning' | 'evening'} day={parseInt(day, 10)} />}
       {loading
         ? 'Loading...'
         : condense(reading).map((unit) => {
