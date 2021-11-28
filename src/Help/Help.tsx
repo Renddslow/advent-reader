@@ -78,6 +78,14 @@ const Help = () => {
         reading, but if you want to split them into three sets, that's cool too.
       </ParagraphStyled>
       <ParagraphStyled>
+        The morning and evening readings are both begun with a short introduction, roughly a 2-3
+        minute read, which help you find something specific to focus on in the text you're about to
+        read. These aren't devotionals. They're meant to help you see a common thread throughout the
+        overall reading plan and to help you catch something you perhaps hadn't noticed before. They
+        might occasionally stray toward the subjective, but I have tried to center them in the text
+        as much as possible.
+      </ParagraphStyled>
+      <ParagraphStyled>
         Ultimately, the goal is to make the challenge achievable, so however you've got to read it –
         using our reader, your own paper Bible, or an audio edition – do it.
       </ParagraphStyled>
