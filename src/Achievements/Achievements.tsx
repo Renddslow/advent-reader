@@ -64,7 +64,6 @@ const Achievements = () => {
   const calculator = calculateBadge(completions);
 
   // TODO: Add achivement date -> Calculate last `read` of a completion for a given badge
-  // TODO: fix
   const earnedProgressBadges = progressBadges.filter((badge) => calculator(badge.condition));
   const earnedPsalmBadges = psalmsBadges.filter((badge) => calculator(badge.condition));
   const earnedHiddenBadges = hiddenBadges.filter((badge) => calculator(badge.condition));

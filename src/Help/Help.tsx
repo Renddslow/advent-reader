@@ -71,8 +71,18 @@ const Help = () => {
         </a>{' '}
         of Scripture.
       </ParagraphStyled>
+      <h2>Reading Schedule</h2>
+      <ParagraphStyled>
+        Readings are broken up into three parts: morning, evening, and Psalms. Each day a new set of
+        readings are unlocked. Personally, I like the idea of reading the Psalms with your morning
+        reading, but if you want to split them into three sets, that's cool too.
+      </ParagraphStyled>
+      <ParagraphStyled>
+        Ultimately, the goal is to make the challenge achievable, so however you've got to read it –
+        using our reader, your own paper Bible, or an audio edition – do it.
+      </ParagraphStyled>
     </Wrapper>
-  ); // TODO
+  );
 };
 
 export default Help;

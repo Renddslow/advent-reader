@@ -2,11 +2,14 @@ import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
 import { add, isSameDay, isBefore } from 'date-fns';
 import shouldIntercept from 'click-should-be-intercepted-for-navigation';
+import { useLocation } from 'wouter-preact';
+import calculateBadge from 'gamif';
+import { styled } from 'goober';
 
 import Panel, { Day, ExpandButton } from './Panel';
 import { Complete } from './types';
-import { styled } from 'goober';
-import { useLocation } from 'wouter-preact';
+import badges from '../badges';
+import BadgeModal from './BadgeModal';
 
 type Plan = {
   day: number;
@@ -30,6 +33,8 @@ const Home = () => {
   const [plan, setPlan] = useState<Plan[]>([]);
   const [loading, setLoading] = useState(true);
   const [completions, setCompletions] = useState<Complete[]>([]);
+  const [badgesToShow, setBadgesToShow] = useState([]);
+  const [keepOpen, setKeepOpen] = useState(true);
   const [, setLocation] = useLocation();
 
   const handleClick = (e) => {
@@ -38,6 +43,10 @@ const Home = () => {
       setLocation('/help');
     }
   };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  });
 
   useEffect(() => {
     fetch('/data/plan.json')
@@ -50,11 +59,42 @@ const Home = () => {
 
   useEffect(() => {
     fetch('/.netlify/functions/completions')
-      .then((d) => d.json())
+      .then((d) => {
+        if (d.status === 400) {
+          window.location.href = '/';
+        }
+        return d.json();
+      })
       .then((d) => {
         setCompletions(d);
       });
   }, []);
+
+  useEffect(() => {
+    const acknowledgedBadges = JSON.parse(window.localStorage.getItem('ar:acked') || '{}');
+
+    const verifier = calculateBadge(completions);
+
+    const verifiedBadges = badges
+      .map((badge) => ({
+        ...badge,
+        unlocked: verifier(badge.condition),
+      }))
+      .filter((badge) => badge.unlocked)
+      .filter((badge) => !acknowledgedBadges[badge.title]);
+
+    setBadgesToShow(verifiedBadges);
+  }, [completions]);
+
+  useEffect(() => {
+    const acknowledgedBadges = JSON.parse(window.localStorage.getItem('ar:acked') || '{}');
+
+    badgesToShow.forEach(({ title }) => {
+      acknowledgedBadges[title] = true;
+    });
+
+    window.localStorage.setItem('ar:acked', JSON.stringify(acknowledgedBadges));
+  }, [badgesToShow]);
 
   return (
     <Wrapper>
@@ -79,6 +119,9 @@ const Home = () => {
             />
           );
         })}
+      {!!badgesToShow.length && keepOpen && (
+        <BadgeModal badges={badgesToShow} onClose={() => setKeepOpen(false)} />
+      )}
     </Wrapper>
   );
 };
