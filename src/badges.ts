@@ -34,6 +34,16 @@ const badges = [
     args: ['1/morning', '2/evening'],
   }),
   Badge(
+    'Deliverer',
+    'You read about the freedom of Israel from Egypt.',
+    Component({ color: 'orange' }),
+    {
+      type: 'in',
+      args: ['3/morning'],
+    },
+    true,
+  ),
+  Badge(
     'An Outstretched Arm',
     'You read the whole book of Exodus',
     Component({ color: 'auburn' }),
