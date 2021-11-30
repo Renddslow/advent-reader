@@ -39,7 +39,7 @@ const badges = [
     Component({ color: 'orange' }),
     {
       type: 'in',
-      args: ['3/morning'],
+      args: ['3/evening'],
     },
     true,
   ),
